@@ -25,4 +25,27 @@ namespace BibliotecaScolastica
             InitializeComponent();
         }
     }
+
+    class Libro
+    {
+        
+        public string toString(string autore, string titolo, string annoPubblicazione, string editore, string nPagine)
+        {
+            string infoLibro = autore + "" + titolo + annoPubblicazione + editore + nPagine;
+
+            return infoLibro;
+
+           
+
+        }
+
+
+
+
+
+    }
+
+
+
+
 }
