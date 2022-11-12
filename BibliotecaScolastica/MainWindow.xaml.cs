@@ -267,6 +267,64 @@ namespace BibliotecaScolastica
             
         }
 
+    }
+
+    class Biblioteca
+    {
+        string nome;
+        string indirizzo;
+        string orarioApertura;
+        string orarioChiusura;
+        int i = 0;
+        string[] elencoLibri = new string[1000];
+        public string getNome()
+        {
+            
+            return nome;
+        }
+
+        public void  setNome(string nm)
+        {
+            nome = nm;
+        }
+
+        public string getIndirizzo()
+        {
+
+            return indirizzo;
+        }
+
+        public void setIndirizzo(string ind)
+        {
+            indirizzo = ind;
+        }
+
+        public string getOrarioApertura()
+        {
+
+            return orarioApertura;
+        }
+
+        public void setOrarioApertura(string oAp)
+        {
+            orarioApertura = oAp;
+        }
+
+        public string getOrarioChiusura()
+        {
+
+            return orarioChiusura;
+        }
+
+        public void setOrarioChiusura(string oCh)
+        {
+            orarioChiusura = oCh;
+        }
+
+        public void aggiungiAdElencoLibri(string libro)
+        {
+            elencoLibri[i] = libro;
+        }
 
 
 
