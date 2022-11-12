@@ -210,5 +210,25 @@ namespace BibliotecaScolastica
             l.tostring(autore, titolo, annoPublicazione, nPagine, editore);
             l.readingTime(nPagine);
         }
+
+        private void btnAggiungiBiblioteca_Click(object sender, RoutedEventArgs e)
+        {
+            string nome = txtNomeBiblioteca .Text;
+            string indirizzo = txtIndirizzo .Text;
+            string orarioApertura = txtOrarioApertura.Text;
+            string orarioChiusura = txtOrarioChiusura.Text;
+
+            Biblioteca b = new Biblioteca();
+            b.getNome();
+            b.setNome(nome);
+            b.getIndirizzo();
+            b.setIndirizzo(indirizzo);
+            b.getOrarioApertura();
+            b.setOrarioApertura(orarioApertura);
+            b.getOrarioChiusura();
+            b.setOrarioChiusura(orarioChiusura);
+            b.Aggiungilibro(txtTitolo.Text);
+
+        }
     }
 }
