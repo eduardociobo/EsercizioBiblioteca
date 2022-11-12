@@ -115,7 +115,10 @@ namespace BibliotecaScolastica
             orarioChiusura = oCh;
         }
 
-
+        public void aggiungiAdElencoLibri(string libro)
+        {
+            elencoLibri[i] = libro;
+        }
 
 
 
